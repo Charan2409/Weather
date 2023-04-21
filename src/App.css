@@ -36,6 +36,7 @@ h3 {
 
 input[type=text] {
   background-color: black;
+  color: white;
   padding: 5px 9px 5px 3px;
   margin: 2px;
   border: 1px solid black;
