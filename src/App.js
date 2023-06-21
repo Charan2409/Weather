@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import "./index.css";
-import Image from "./Image.jpg";
+import bg_image from "./bg_image.jpeg";
 
 function App() {
   const [city, setCity] = useState("");
@@ -30,7 +30,7 @@ function App() {
   };
 
   return (
-    <div className="App" style={{ backgroundImage: `url(${Image})` }}>
+    <div className="App" style={{ backgroundImage: `url(${bg_image})` }}>
       <center>
         <h1>Weather App</h1>
         <form onSubmit={submitHandler}>
@@ -40,7 +40,11 @@ function App() {
             placeholder="please enter city name"
             onChange={changeHandler}
           />
-          <input type="submit" value="Get Temperature" />
+          <input
+            type="submit"
+            className="bg-green-100"
+            value="Get Temperature"
+          />
         </form>
         <br></br>
         <h3>Temperature : {result} °C </h3>
